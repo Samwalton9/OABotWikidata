@@ -55,6 +55,11 @@ def check_if_doi_resolves(doi):
 
 
 def sensible_url(url):
-    # Input: A URL string
-    # Output: True or False for match against URL sanity checks (regex?)
-    pass
+    """Input: A URL string
+    Output: True or False for match against URL sanity checks (regex?)
+    """
+    if len(url) <= 2000 and url.startswith("http") and "://" in url:
+        return True
+    else:
+        return False
+    
