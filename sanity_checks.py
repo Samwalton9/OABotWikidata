@@ -35,6 +35,7 @@ def check_if_doi_resolves(doi):
 
     If the link works, make sure that it points to the same DOI
     Checks first if it's a valid DOI or see if it's a redirect.
+    Difference in capitalization is ok.
     :return: True if works as expected, False if it doesn't resolve correctly,
     or if the metadata DOI doesn't match doi, return the metadata DOI
     """
