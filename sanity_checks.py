@@ -3,7 +3,7 @@ import requests
 
 # Based on the top-level Crossref formula at
 # https://www.crossref.org/blog/dois-and-matching-regular-expressions/
-valid_doi_regex = r"^10.\d{4,9}/[-._;()/:A-Z0-9]+$"
+valid_doi_regex = r"^10.\d{4,9}/[-._;()/:A-Za-z0-9]+$"
 valid_doi_match = re.compile(valid_doi_regex)
 
 
